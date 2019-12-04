@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'arenoregular';
+    src: url('../fonts/Areno.otf') format('woff2'),
+         url('../fonts/areno.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font-serif: kings-caslon-display, serif;
+    --font-sans-serif: prohibition, sans-serif;
+    --font-headings: arenoregular, Arial, sans-serif;
+    --black: #000;
+    --grey-light: #c4c6c8;
+    --greay-dark: #777372;
+    --white: #fff;
+    --blue: #006391;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
