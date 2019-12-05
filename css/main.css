@@ -35,8 +35,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    line-height: 20px;
-    letter-spacing: 1px;
+    line-height: 22px;
     left: -20px;
 }
 a {
@@ -101,4 +100,13 @@ h3, h4 {
     top: 0;
     width: 100%;
     margin-top: 23rem;
+}
+.visually-hidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
 }
