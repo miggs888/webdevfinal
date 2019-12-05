@@ -8,7 +8,6 @@
 
 :root {
     --font-serif: kings-caslon-display, serif;
-    --font-sans-serif: prohibition, sans-serif;
     --font-headings: arenoregular, Arial, sans-serif;
     --black: #000;
     --grey-light: #c4c6c8;
@@ -23,3 +22,75 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+body {
+    background-color: var(--blue);
+}
+  .nav {
+    font-family: var(--font-serif);
+    color: var(--blue);
+    list-style: none;
+    font-style: italic;
+    font-size: 110%;
+    text-align:left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 20px;
+    letter-spacing: 1px;
+    left: -20px;
+}
+.pagewrap__home__img {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: var(--blue);
+}
+.img_house {
+    border-right: 5px solid var(--blue);
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+.img_gin {
+    max-width: 50%;
+    border-right: 5px solid var(--blue);
+    height: auto;
+    object-fit: cover;
+}
+.tenseventeen {
+    font-family: var(--font-headings);
+    color: var(--grey-light);
+    padding: 20px;
+    font-size: 300%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-top: 20rem;
+
+}
+h3, h4 {
+    font-family: var(--font-headings);
+    letter-spacing: 1px;
+    font-size: 110%;
+}
+.heading__bottled {
+    font-family: var(--font-headings);
+    color: var(--white);
+    padding: 20px;
+    font-size: 150%;
+    letter-spacing: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 23rem;
+}
