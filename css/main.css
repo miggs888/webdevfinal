@@ -25,7 +25,7 @@ html {
 body {
     background-color: var(--blue);
 }
-  .nav {
+.nav {
     font-family: var(--font-serif);
     color: var(--blue);
     list-style: none;
@@ -53,14 +53,14 @@ a:hover {
     background-color: var(--blue);
 }
 .img_house {
-    border-right: 5px solid var(--blue);
+    border-right: 0px solid var(--blue);
     max-width: 50%;
     height: auto;
     object-fit: cover;
 }
 .img_gin {
     max-width: 50%;
-    border-right: 5px solid var(--blue);
+    border-left: 5px solid var(--blue);
     height: auto;
     object-fit: cover;
 }
@@ -86,6 +86,12 @@ h3, h4 {
     letter-spacing: 1px;
     font-size: 110%;
 }
+h5 {
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--greay-dark);
+    text-align: center;
+}
 .heading__bottled {
     font-family: var(--font-headings);
     color: var(--white);
@@ -96,17 +102,30 @@ h3, h4 {
     flex-wrap: wrap;
     overflow: hidden;
     justify-content: space-around;
-    position: fixed;
-    top: 0;
+    top: -10;
     width: 100%;
-    margin-top: 23rem;
+    margin-top: -27rem;
+    z-index: 2;
 }
-.visually-hidden { 
-    position: absolute !important;
-    height: 1px; 
-    width: 1px;
+.container__body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(6,40rem);
+    grid-gap: 6px;
+    flex-wrap: nowrap;
     overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap; /* added line */
+    justify-content: space-between;
+    border: 2px solid green;
+    margin-top: 22.5rem;
+
+}
+.container__body__left {
+    height: auto;
+    border: 2px solid red;
+    background-color: var(--white);
+}
+.container__body__right {
+    height: auto;
+    border: 2px solid hotpink;
+    background-color: var(--white);
 }
