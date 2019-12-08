@@ -11,7 +11,7 @@
     --font-headings: arenoregular, Arial, sans-serif;
     --black: #000;
     --grey-light: #c4c6c8;
-    --greay-dark: #777372;
+    --grey-dark: #777372;
     --white: #fff;
     --blue: #006391;
 }
@@ -95,7 +95,7 @@ h3, h4 {
 h5 {
     font-family: var(--font-serif);
     font-style: italic;
-    color: var(--greay-dark);
+    color: var(--grey-dark);
     text-align: center;
 }
 p {
@@ -171,13 +171,14 @@ p {
     text-align: right;
     grid-row: 7 / 7;
     left: -10rem;
-    text-justify: center;
     padding: 30px;
 }
 /***** END BODY LEFT******/
 
 .logo {
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     padding: 20px;
 }
 /***** BODY RIGHT******/
@@ -199,15 +200,13 @@ p {
 }
 .right__right__two {
     grid-row: 2 / 2;
-    /* display: flex; */
     align-items: center;
     padding: 40px;
 }
 .right__right__three {
     grid-row: 3 / 3;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px
 }
 
 .right__right__four {
@@ -231,8 +230,6 @@ p {
 .container__body__right {
     height: auto;
     border-left: 2.5px solid var(--blue);
-    /* border: 2px solid hotpink; */
-    /* background-color: var(--white); */
 }
 figcaption {
     font-family: var(--font-serif);
@@ -420,7 +417,6 @@ figcaption {
     font-family: var(--font-serif);
     color: var(--blue);
     letter-spacing: 1px;
-    /* justify-content: left; */
 }
 .item1 {
     font-family: var(--font-serif);
@@ -505,7 +501,6 @@ footer {
 
 }
 .social {
-/*     display: flex; */
     padding: 8rem;
 }
 .social__icon {
