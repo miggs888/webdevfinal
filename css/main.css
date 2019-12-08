@@ -497,8 +497,7 @@ footer {
 .contact_link:hover {
     font-family: var(--font-headings);
     color: var(--grey-light);
-    text-decoration: none;
-
+    letter-spacing: 1px;
 }
 .social {
     padding: 8rem;
