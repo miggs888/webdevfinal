@@ -71,7 +71,7 @@ a:hover {
     font-family: var(--font-headings);
     color: var(--grey-light);
     padding: 20px;
-    font-size: 300%;
+    font-size: 200%;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -96,6 +96,11 @@ h5 {
     color: var(--greay-dark);
     text-align: center;
 }
+p {
+    font-family: var(--font-serif);
+    letter-spacing: .5px;
+}
+
 .heading__bottled {
     font-family: var(--font-headings);
     color: var(--white);
@@ -124,15 +129,40 @@ h5 {
     margin-top: 22.5rem;
 
 }
-.container__body__left {
+
+/***** BODY LEFT******/
+.left {
     height: auto;
+    display: grid;
+    grid-template-rows: repeat(7, 40rem);
+    grid-template-columns: 100%;
     /* border: 2px solid red; */
     /* background-color: var(--white); */
-    border-left: 2.5px solid var(--blue);
+    border-right: 2.5px solid var(--blue);
 }
+.left__left__one {
+    grid-row: 1 / 1;
+}
+.left__left__two {
+    grid-row: 2 / 2;
+}
+.left__left__three {
+    grid-row: 3 / 3;
+}
+
+.left__left__four {
+    grid-row: 4 / 4;
+}
+.left__left__five {
+    grid-row: 5 / 5;
+}
+.left__left__six {
+    grid-row: 6 / 6;
+}
+/***** END BODY LEFT******/
 .container__body__right {
     height: auto;
-    border-right: 2.5px solid var(--blue);
+    border-left: 2.5px solid var(--blue);
     /* border: 2px solid hotpink; */
     /* background-color: var(--white); */
 }
@@ -142,27 +172,222 @@ figcaption {
     font-style: italic;
     text-align: center;
 }
+/***** START PROCESS IMAGE GRID****/
+.process__grid {
+    display: grid;
+    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 20px;
+    padding: 60px;
+    align-content: center;
+    
+}
 
+.img_machine1 {
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+    max-width: 75%;
+ }
+ .img_machine2 {
+     grid-column: 2 / 2;
+     grid-row: 4 / 5;
+     max-width: 100%;
+ }
+/***** END PROCESS IMAGE GRID****/
+
+ /****** START PROCESS STEPS GRID ******/
+ .container__process {
+    padding: 50px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 30px 400px;
+    grid-template-rows: 100px 50px 50px
+}
+ .itemp {
+    display: flex;
+    font-family: var(--font-serif);
+    color: var(--blue);
+    margin: 20px;
+}
+.itemp1 {
+    font-family: var(--font-serif);
+    color: var(--grey-light);
+    font-style: italic;
+    grid-column: 1 / 1; 
+    grid-row: 1 / 1;
+}
+.itemp2 {
+    font-family: var(--font-serif);
+    color: var(--grey-light);
+    font-style: italic;
+    grid-column: 1 / 1; 
+    grid-row: 2 / 2;
+}
+.itemp3 {
+    font-family: var(--font-serif);
+    color: var(--grey-light);
+    font-style: italic;
+    grid-column: 1 / 1; 
+    grid-row: 3 / 3;
+}
+.itemp4 {
+    font-family: var(--font-serif);
+    color: var(--blue);
+    grid-column: 2 / 2; 
+    grid-row: 1 / 1;
+}
+.itemp5 {
+    font-family: var(--font-serif);
+    color: var(--blue);
+    grid-column: 2 / 2; 
+    grid-row: 2 / 2;
+}
+.itemp6 {
+    font-family: var(--font-serif);
+    color: var(--blue);
+    grid-column: 2 / 2; 
+    grid-row: 3 / 3;
+}
+/****** END OF PROCESS STEPS GRID ******/
+
+ /***** START PROCESS IMAGES GRID ******/
 .component__img__process {
     display: grid;
     grid-template-rows: repeat(7, 60px);
     grid-template-columns: repeat(5, 20%);
     grid-gap: 20px;
-/*     object-fit: cover; */
     width: 100%;
-    padding: 50px;
-    
+    padding: 30px;
 }
-
-.img_machine1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
+.img_drums {
+   grid-column: 1 / 3;
+   grid-row: 1 / 3;
+   justify-self: start;
+   width: 100%;
+}
+.img_cat {
+    grid-column: 2 / 2;
+    grid-row: 5 / 7;
+    object-fit: cover;
+    width: 100%;
     justify-self: start;
-    max-width: 100%;
- }
- .img_machine2 {
-     grid-column: 3 / 5;
-     grid-row: 3 / 5;
-     max-width: 100%;
-     justify-self: start;
- }
+}
+.img_floorplan {
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+    width: 100%;
+}
+.process1 {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+    font-family: var(--font-serif);
+    color: var(--blue);
+    font-style: italic;
+}
+.process2 {
+    grid-column: 5 / 5;
+    grid-row: 2 / 2;
+    font-family: var(--font-serif);
+    color: var(--blue);
+    font-style: italic;
+}
+.process3 {
+    grid-column: 3 / 3;
+    grid-row: 7 / 7;
+    font-family: var(--font-serif);
+    color: var(--blue);
+    font-style: italic;
+}
+/***** END OF PROCESS IMAGES GRID ********/
+
+}
+.itemp {
+    display: flex;
+    font-family: var(--font-serif);
+    color: var(--blue);
+    margin: 20px;
+}
+.itemp1 {
+    font-family: var(--font-serif);
+    color: var(--grey-light);
+    font-style: italic;
+    grid-column: 1 / 1; 
+    grid-row: 1 / 1;
+}
+.itemp2 {
+    font-family: var(--font-serif);
+    color: var(--grey-light);
+    font-style: italic;
+    grid-column: 1 / 1; 
+    grid-row: 2 / 2;
+}
+.itemp3 {
+    font-family: var(--font-serif);
+    color: var(--grey-light);
+    font-style: italic;
+    grid-column: 1 / 1; 
+    grid-row: 3 / 3;
+}
+.itemp4 {
+    font-family: var(--font-serif);
+    color: var(--blue);
+    grid-column: 2 / 2; 
+    grid-row: 1 / 1;
+}
+.itemp5 {
+    font-family: var(--font-serif);
+    color: var(--blue);
+    grid-column: 2 / 2; 
+    grid-row: 2 / 2;
+}
+.itemp6 {
+    font-family: var(--font-serif);
+    color: var(--blue);
+    grid-column: 2 / 2; 
+    grid-row: 3 / 3;
+}
+.container_recipie {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: repeat(9, 20px);
+    font-family: var(--font-serif);
+    color: var(--blue);
+    letter-spacing: 1px;
+    /* justify-content: left; */
+}
+.item1 {
+    font-family: var(--font-serif);
+    color: var(--grey-light);
+    font-style: italic;
+    grid-column: 1 / 1; 
+    grid-row: 1 / 1;
+}
+.item2 {
+    grid-column: 2 / 2; 
+    grid-row: 1 / 1;
+}
+.item3 {
+    grid-column: 2 / 2; 
+    grid-row: 2 / 2;
+}
+.item4 {
+    grid-column: 2 / 2; 
+    grid-row: 3 / 3;
+}
+.item5 {
+    grid-column: 2 / 2; 
+    grid-row: 4 / 4;
+}
+.item6 {
+    font-family: var(--font-serif);
+    color: var(--grey-light);
+    font-style: italic;
+    grid-column: 1 / 1; 
+    grid-row: 8 / 8;
+}
+.item7 {
+    color: var(--black);
+    grid-column: 1 / 3; 
+    grid-row: 9 / 9;
+    padding-top: 3px;
+}
